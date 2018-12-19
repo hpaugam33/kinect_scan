@@ -1,0 +1,47 @@
+<launch>
+
+
+<!-- Segmentation -->
+
+
+<node name="real_time_segmentation" pkg="kinect_scan" type="real_time_segmentation" output="screen" >
+	<remap from="/input" to="/rtabmap/scan_map"/>
+
+
+	<remap from="/real_time_segmentation/output" to="/real_time_segmentation/pointCloud_total_segmented"/>
+
+	<remap from="/real_time_segmentation/output1" to="/real_time_segmentation/pointCloud_segmented1"/>
+	<remap from="/real_time_segmentation/output2" to="/real_time_segmentation/pointCloud_segmented2"/>
+<remap from="/real_time_segmentation/output3" to="/real_time_segmentation/pointCloud_segmented3"/>
+	<remap from="/real_time_segmentation/output4" to="/real_time_segmentation/pointCloud_segmented4"/>
+	<remap from="/real_time_segmentation/output5" to="/real_time_segmentation/pointCloud_segmented5"/>
+	<remap from="/real_time_segmentation/output6" to="/real_time_segmentation/pointCloud_segmented6"/>
+	<remap from="/real_time_segmentation/output7" to="/real_time_segmentation/pointCloud_segmented7"/>
+	<remap from="/real_time_segmentation/output8" to="/real_time_segmentation/pointCloud_segmented8"/>
+	<remap from="/real_time_segmentation/output9" to="/real_time_segmentation/pointCloud_segmented9"/>
+	<remap from="/real_time_segmentation/output10" to="/real_time_segmentation/pointCloud_segmented10"/>
+	<remap from="/real_time_segmentation/output11" to="/real_time_segmentation/pointCloud_segmented11"/>
+
+
+	<param name="ClusterTolerance" type="double" value="0.1" />
+	<param name="MinClusterSize" type="int" value="150" />
+	<param name="DistanceThreshold" type="double" value="0.005" />
+	<param name="LeafSize" type="double" value="0.08" />
+
+	<param name="ZPassThrough" type="bool" value="true" />
+	<param name="zMin" type="double" value="-0.50" />
+	<param name="zMax" type="double" value="1.5" />
+
+	<param name="saving" type="bool" value="true" />	
+	<param name="output_cloud_file" type="string" value="/home/hugo/ros/src/kinect_scan/data/test.ply" />
+
+
+</node>
+
+
+
+
+
+
+
+</launch>

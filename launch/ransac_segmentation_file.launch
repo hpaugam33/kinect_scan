@@ -1,0 +1,154 @@
+<launch>
+
+
+<!-- Segmentation -->
+
+<node name="ransac_segmentation1" pkg="kinect_scan" type="ransac_segmentation" >
+	<remap from="/input" to="/cloud_file_segmentation/pointCloud_segmented1"/>
+
+	<remap from="/ransac_segmentation1/output" to="/ransac_segmentation1/pointCloud_segmented1"/>
+
+	<param name="saving" type="bool" value="true" />	
+	<param name="output_cloud_file" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud1.pcd" />
+
+</node>
+
+
+
+
+
+
+
+<node name="ransac_segmentation2" pkg="kinect_scan" type="ransac_segmentation" >
+	<remap from="/input" to="/cloud_file_segmentation/pointCloud_segmented2"/>
+
+	<remap from="/ransac_segmentation2/output" to="/ransac_segmentation2/pointCloud_segmented"/>
+
+	<param name="saving" type="bool" value="true" />	
+	<param name="output_cloud_file" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud2.pcd" />
+
+</node>
+
+
+
+
+<node name="ransac_segmentation3" pkg="kinect_scan" type="ransac_segmentation" >
+	<remap from="/input" to="/cloud_file_segmentation/pointCloud_segmented3"/>
+
+	<remap from="/ransac_segmentation3/output" to="/ransac_segmentation3/pointCloud_segmented"/>
+
+	<param name="saving" type="bool" value="true" />	
+	<param name="output_cloud_file" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud3.pcd" />
+
+</node>
+
+
+
+ 
+<node name="ransac_segmentation4" pkg="kinect_scan" type="ransac_segmentation" >
+	<remap from="/input" to="/cloud_file_segmentation/pointCloud_segmented4"/>
+
+	<remap from="/ransac_segmentation4/output" to="/ransac_segmentation4/pointCloud_segmented"/>
+
+	<param name="saving" type="bool" value="true" />	
+	<param name="output_cloud_file" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud4.pcd" />
+
+</node>
+
+
+
+
+
+<node name="ransac_segmentation5" pkg="kinect_scan" type="ransac_segmentation" >
+	<remap from="/input" to="/cloud_file_segmentation/pointCloud_segmented5"/>
+
+	<remap from="/ransac_segmentation5/output" to="/ransac_segmentation5/pointCloud_segmented"/>
+
+	<param name="saving" type="bool" value="true" />	
+	<param name="output_cloud_file" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud5.pcd" />
+
+</node>
+
+
+
+
+<node name="ransac_segmentation6" pkg="kinect_scan" type="ransac_segmentation" >
+	<remap from="/input" to="/cloud_file_segmentation/pointCloud_segmented6"/>
+
+	<remap from="/ransac_segmentation6/output" to="/ransac_segmentation6/pointCloud_segmented"/>
+
+	<param name="saving" type="bool" value="true" />	
+	<param name="output_cloud_file" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud6.pcd" />
+
+</node>
+
+
+
+
+<node name="ransac_segmentation7" pkg="kinect_scan" type="ransac_segmentation" >
+	<remap from="/input" to="/cloud_file_segmentation/pointCloud_segmented7"/>
+
+	<remap from="/ransac_segmentation7/output" to="/ransac_segmentation7/pointCloud_segmented"/>
+
+	<param name="saving" type="bool" value="true" />	
+	<param name="output_cloud_file" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud7.pcd" />
+
+</node>
+
+
+
+
+<node name="ransac_segmentation8" pkg="kinect_scan" type="ransac_segmentation" >
+	<remap from="/input" to="/cloud_file_segmentation/pointCloud_segmented8"/>
+
+	<remap from="/ransac_segmentation8/output" to="/ransac_segmentation8/pointCloud_segmented"/>
+
+	<param name="saving" type="bool" value="true" />	
+	<param name="output_cloud_file" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud8.pcd" />
+
+</node>
+
+
+-->
+
+<node name="ransac_segmentation9" pkg="kinect_scan" type="ransac_segmentation" >
+	<remap from="/input" to="/cloud_file_segmentation/pointCloud_segmented9"/>
+
+	<remap from="/ransac_segmentation9/output" to="/ransac_segmentation9/pointCloud_segmented"/>
+
+	<param name="saving" type="bool" value="true" />	
+	<param name="output_cloud_file" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud9.pcd" />
+
+</node>
+
+
+
+
+<node name="ransac_segmentation10" pkg="kinect_scan" type="ransac_segmentation" >
+	<remap from="/input" to="/cloud_file_segmentation/pointCloud_segmented10"/>
+
+	<remap from="/ransac_segmentation10/output" to="/ransac_segmentation10/pointCloud_segmented"/>
+
+	<param name="saving" type="bool" value="true" />	
+	<param name="output_cloud_file" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud10.pcd" />
+
+</node>
+
+
+
+
+<node name="ransac_segmentation11" pkg="kinect_scan" type="ransac_segmentation"  >
+	<remap from="/input" to="/cloud_file_segmentation/pointCloud_segmented11"/>
+
+	<remap from="/ransac_segmentation11/output" to="/ransac_segmentation11/pointCloud_segmented"/>
+
+	<param name="saving" type="bool" value="true" />	
+	<param name="output_cloud_file" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud11.pcd" />
+
+</node>
+
+
+
+
+
+</launch>

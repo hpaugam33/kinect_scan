@@ -1,0 +1,31 @@
+<launch>
+
+
+<!-- Bounding boxes generation -->
+
+
+<node name="bounding_box_1" pkg="kinect_scan" type="bounding_box" >
+	<remap from="/input" to="/ransac_segmentation/pointCloud_segmented"/>
+	<remap from="/bounding_box_1/output" to="/bounding_box_1/point_cloud_box_1"/>
+	
+</node>
+
+<node name="bounding_box_2" pkg="kinect_scan" type="bounding_box" >
+	<remap from="/input" to="/real_time_segmentation/pointCloud_segmented2"/>
+	<remap from="/bounding_box_2/output" to="/bounding_box_2/point_cloud_box_2"/>
+	
+</node>
+
+<node name="bounding_box_3" pkg="kinect_scan" type="bounding_box" >
+	<remap from="/input" to="/real_time_segmentation/pointCloud_segmented3"/>
+	<remap from="/bounding_box_3/output" to="/bounding_box_3/point_cloud_box_3"/>
+	
+</node>
+
+<node name="bounding_box_4" pkg="kinect_scan" type="bounding_box" >
+	<remap from="/input" to="/real_time_segmentation/pointCloud_segmented4"/>
+	<remap from="/bounding_box_4/output" to="/bounding_box_4/point_cloud_box_4"/>
+	
+</node>
+
+</launch>

@@ -1,0 +1,21 @@
+
+list_nodes = gen.enum([ gen.const("cloud_file_segmentation",      int_t, 0, "A small constant"),
+                       gen.const("real_time_segmentation",     int_t, 1, "A medium constant")],
+                     "An enum to set nodes")
+
+gen.add("nodes", int_t, 0, "A size parameter which is edited via an enum", 1, 0, 1, edit_method=list_nodes)
+
+list_topics = gen.enum([ gen.const("pointCloud_segmented1",      int_t, 0, "A small constant"),
+                       gen.const("pointCloud_segmented2",     int_t, 1, "A medium constant"),
+                       gen.const("pointCloud_segmented3",      int_t, 2, "A large constant"),
+			gen.const("pointCloud_segmented4",      int_t, 3, "A large constant"),
+			gen.const("pointCloud_segmented5",      int_t, 4, "A large constant"),
+			gen.const("pointCloud_segmented6",      int_t, 5, "A large constant"),
+			gen.const("pointCloud_segmented7",      int_t, 6, "A large constant"),
+			gen.const("pointCloud_segmented8",      int_t, 7, "A large constant"),
+			gen.const("pointCloud_segmented9",      int_t, 8, "A large constant"),
+			gen.const("pointCloud_segmented10",      int_t, 9, "A large constant"),
+                       gen.const("pointCloud_segmented11", int_t, 10, "An extra large constant")],
+                     "An enum to set topics")
+
+gen.add("topics", int_t, 0, "A size parameter which is edited via an enum", 1, 0, 10, edit_method=list_topics)

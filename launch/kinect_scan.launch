@@ -1,0 +1,67 @@
+<launch>
+
+<arg name="real_time" default="true"/>
+
+
+<group if="$(arg real_time)">
+
+    <!-- Startup Camera Kinect 360 -->
+    <include file="$(find freenect_launch)/launch/freenect.launch">
+        <arg name="depth_registration" value="true"/>
+    </include>
+
+
+    <!-- Startup Rtab-MAP-->
+    <include file="$(find rtabmap_ros)/launch/rtabmap.launch">
+        <arg name="args" value="--delete_db_on_start"/>
+        <arg name="output" value="log"/>
+    </include>
+
+
+    <!-- Startup PCL clustering-->
+    <include file="$(find kinect_scan)/launch/segmentation.launch"/> 
+
+    <!-- Startup PCL Segmentation -->
+    <include file="$(find kinect_scan)/launch/ransac_segmentation.launch"/>
+
+    <!-- Bounding box of the segmented clouds
+    <include file="$(find kinect_scan)/launch/bounding_box.launch"/>-->
+	
+    <!-- Converting PointClouds in Mesh for Unity -->
+    <include file="$(find kinect_scan)/launch/conversion.launch"/>
+	
+
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find kinect_scan)/rviz/from_kinect.rviz" />
+
+
+</group>
+
+
+
+
+<group unless="$(arg real_time)">
+
+    <node pkg="tf" type="static_transform_publisher" name="map_broadcaster" args="1 0 0 0 0 0 1 map_parent map 100" />
+
+    <!-- Startup PCL clustering from a cloud file-->
+    <include file="$(find kinect_scan)/launch/cloud_file_segmentation.launch"/>
+
+    <!-- Startup filter for a cloud file-->
+    <include file="$(find kinect_scan)/launch/ransac_segmentation_file.launch"/>
+
+    <!-- Bounding box of the segmented clouds-->
+    <include file="$(find kinect_scan)/launch/bounding_box.launch"/>
+
+    <!-- Converting PointClouds in Mesh for Unity -->
+    <include file="$(find kinect_scan)/launch/conversion.launch"/>
+
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find kinect_scan)/rviz/from_file.rviz" />
+
+<node name="rqt_reconfigure" pkg="rqt_reconfigure" type="rqt_reconfigure" />
+
+</group>
+
+
+
+
+</launch>

@@ -1,0 +1,105 @@
+<launch>
+
+
+<!-- Conversion in mesh file for Unity -->
+
+
+<node name="conversion1" pkg="kinect_scan" type="conversion" output="screen" >
+	<param name="file_input" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud1.pcd" />
+	<param name="file_output" type="string" value="/home/hugo/ros/src/kinect_scan/data/Unity/mesh1.txt" />
+
+
+</node>
+
+
+
+<node name="conversion2" pkg="kinect_scan" type="conversion" output="screen" >
+
+	<param name="file_input" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud2.pcd" />
+	<param name="file_output" type="string" value="/home/hugo/ros/src/kinect_scan/data/Unity/mesh2.txt" />
+
+</node>
+
+
+
+<node name="conversion3" pkg="kinect_scan" type="conversion" output="screen" >
+	
+	<param name="file_input" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud3.pcd" />
+	<param name="file_output" type="string" value="/home/hugo/ros/src/kinect_scan/data/Unity/mesh3.txt" />
+
+</node>
+
+
+
+<node name="conversion4" pkg="kinect_scan" type="conversion" output="screen" >
+	
+	<param name="file_input" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud4.pcd" />
+	<param name="file_output" type="string" value="/home/hugo/ros/src/kinect_scan/data/Unity/mesh4.txt" />
+
+</node>
+
+
+<node name="conversion5" pkg="kinect_scan" type="conversion" output="screen" >
+	
+
+
+	<param name="file_input" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud5.pcd" />
+	<param name="file_output" type="string" value="/home/hugo/ros/src/kinect_scan/data/Unity/mesh5.txt" />
+
+
+</node>
+
+
+
+<node name="conversion6" pkg="kinect_scan" type="conversion" output="screen" >
+	
+	<param name="file_input" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud6.pcd" />
+	<param name="file_output" type="string" value="/home/hugo/ros/src/kinect_scan/data/Unity/mesh6.txt" />
+
+</node>
+
+
+<node name="conversion7" pkg="kinect_scan" type="conversion" output="screen" >	
+
+	<param name="file_input" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud7.pcd" />
+	<param name="file_output" type="string" value="/home/hugo/ros/src/kinect_scan/data/Unity/mesh7.txt" />
+
+</node>
+
+
+<node name="conversion8" pkg="kinect_scan" type="conversion" output="screen" >
+
+	<param name="file_input" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud8.pcd" />
+	<param name="file_output" type="string" value="/home/hugo/ros/src/kinect_scan/data/Unity/mesh8.txt" />
+
+</node>
+
+
+<node name="conversion9" pkg="kinect_scan" type="conversion" output="screen" >
+	
+	<param name="file_input" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud9.pcd" />
+	<param name="file_output" type="string" value="/home/hugo/ros/src/kinect_scan/data/Unity/mesh9.txt" />
+
+</node>
+
+
+
+<node name="conversion10" pkg="kinect_scan" type="conversion" output="screen" >
+	
+	<param name="file_input" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud10.pcd" />
+	<param name="file_output" type="string" value="/home/hugo/ros/src/kinect_scan/data/Unity/mesh10.txt" />
+
+</node>
+
+
+
+<node name="conversion11" pkg="kinect_scan" type="conversion" output="screen" >
+	
+	<param name="file_input" type="string" value="/home/hugo/ros/src/kinect_scan/data/pcd/cloud11.pcd" />
+	<param name="file_output" type="string" value="/home/hugo/ros/src/kinect_scan/data/Unity/mesh11.txt" />
+
+</node>
+
+
+
+</launch>
