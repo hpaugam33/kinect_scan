@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # my_pcl_tutotial
 
 [Watch video](https://www.youtube.com/watch?v=0gA_Dr9YYRY)
@@ -35,3 +36,7 @@ $ rosrun my_pcl_tutorial downsampling
 $ rosrun my_pcl_tutorial segmentation
 
 ![alt text](https://github.com/hoangcuongbk80/my_pcl_tutotial/blob/master/docs/figs/Segmented.png)
+=======
+# kinect_scan
+A program for scanning a room with kinect to avoid fourniture while in a VR environment 
+>>>>>>> a36c02b273275fff067b20a99ccc7904d87669c0
