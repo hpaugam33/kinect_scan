@@ -28,6 +28,8 @@ $ roslaunch kinect_scan kinect_scan.launch
 
 ![alt text](https://github.com/hpaugam33/kinect_scan/blob/master/docs/classroom.png)
 
+![alt text](https://github.com/hpaugam33/kinect_scan/blob/master/docs/classroom.png)
+
 
 
 
