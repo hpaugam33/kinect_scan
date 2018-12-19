@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Kinect_scan
 A program for scanning a room with kinect to avoid fourniture while in a VR environment 
 
@@ -27,7 +26,7 @@ Download the source tree into your catkin workspace (here we assume ~/catkin_ws)
 
 $ roslaunch kinect_scan kinect_scan.launch 
 
-![alt text](https://github.com/hpaugam33/kinect_scan/master/docs/classroom.png)
+![alt text](https://github.com/hpaugam33/kinect_scan/blob/master/docs/classroom.png)
 
 
 
